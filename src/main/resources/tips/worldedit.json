@@ -1,0 +1,318 @@
+{
+  "name": "World Edit",
+  "zh_cn": {
+    "/br": {
+      "|": "/brush"
+    },
+    "/brush": {
+      "forest": "//brush forest <形状> [半径] [密度] <种类> 森林刷子，同//forest",
+      "c": {
+        "~": "cylinder"
+      },
+      "cyl": {
+        "~": "cylinder"
+      },
+      "cylinder": "//brush cylinder [-h] <方块> [半径] [高度] 圆柱体刷子，同//cyl",
+      "set": "//brush set <形状> [半径] <样式> 设置方块刷子，同//set",
+      "apply": "//brush apply <形状> [半径] <forest|item|set>",
+      "deform": "//brush deform [-or] <形状> [半径] <表达式> 由表达式指定的形变刷子，同//deform",
+      "lower": "//brush lower <形状> [半径]",
+      "butcher": "//brush (butcher/kill) 移除生物刷子，同/butcher",
+      "kill": {
+        "~": "butcher"
+      },
+      "paint": "/br paint",
+      "none": {
+        "~": "unbind"
+      },
+      "unbind": "//brush (none|unbind) 取消绑定物品",
+      "copy": {
+        "~": "clipboard"
+      },
+      "clipboard": "//brush (clipboard|copy) 剪贴板刷子，同//paste",
+      "gravity": "//brush gravity [-h] [半径] 重力刷子，刺激重力效果，-h影响从最大Y轴开始的方块，而不是目标Y+半径",
+      "grav": {
+        "~": "gravity"
+      },
+      "ex": {
+        "~": "extinguish"
+      },
+      "extinguish": "//brush extinguish [半径] 扑灭火焰刷子，同//extinguish",
+      "s": {
+        "~": "sphere"
+      },
+      "sphere": "//brush sphere [-h] <方块样式> [半径] 球体刷子，-h创建空心球体，同//sphere",
+      "smooth": "//brush smooth [大小] [迭代次数] [蒙版] 平滑刷子，同//smooth",
+      "?": "刷子工具，可以让你从远处建筑和绘制，开启一个刷子的时候，它的功能会绑定到当前手持的物品上，你可以在不同的物品上绑定不同的工具"
+    },
+    "/calc": {
+      "|": "/calculate"
+    },
+    "/calculate": "//calculate <表达式> 计算一个数学表达式",
+    "/center": "//center 设置中心方块",
+    "/chunk": "//chunk 选择所在区块",
+    "/clearhistory": "",
+    "/contract": "//contract <数量> [反方向数量] [方向] 缩小选区",
+    "/copy": "//copy [-be] 复制选区内容到剪贴板，-b同时复制生物群系，-e同时复制实体",
+    "/count": "//count [-d] <方块种类> 获取一种方块的数量，-d表示加上方块nbt数据",
+    "/curve": "//curve [-h] <样式> [粗细] 通过选择的点绘制曲线，只能用于凸多面体选区",
+    "/cut": "//cut [-be] [填充方块样式] 剪切选区内容到剪贴板，-b同时复制生物群系，-e同时复制实体",
+    "/cyl": "//cyl <方块样式> <东西半径> [南北半径] [高度] [-h] 生成圆柱体，-h生成空心的",
+    "/deform": "//deform [-or] <表达式> 对选区内容进行一个由表达式指定的形变，-r使用游戏坐标原点，-o使用选区中心原点",
+    "/desel": "",
+    "/deselect": "",
+    "/distr": "//distr [-cd] [-p <页面>] 获取方块分布率，-c将会计算剪贴板，-d将区分方块状态",
+    "/drain": "//drain [-w] <半径> 抽空池塘，-w使含水方块不再含水",
+    "/drawsel": "",
+    "/eval": {
+      "|": "/calculate"
+    },
+    "/evaluate": {
+      "|": "/calculate"
+    },
+    "/ex": {
+      "|": "/extinguish"
+    },
+    "/expand": {
+      "vert": "//expand vert 扩大选区到基岩和天空",
+      "*": "//expand <数量> [反方向数量] [方向|me|back] 往选定方向拓展选区",
+      "?": "//expand 拓展选区"
+    },
+    "/ext": {
+      "|": "/extinguish"
+    },
+    "/extinguish": "//extinguish [半径] 扑灭火焰",
+    "/faces": "//faces <方块样式> 为选区建造墙壁、天花板和地板",
+    "/fast": "",
+    "/fill": "//fill <方块样式> <半径> [深度] 填充凹洞",
+    "/fillr": "//fillr <方块样式> <半径> 递归填充凹洞",
+    "/fixlava": "//fixlava <半径> 修复池塘，全部换成静止岩浆",
+    "/fixwater": "//fixwater <半径> 修复池塘，全部换成静止水",
+    "/flip": "//flip [方向] 按一个给出的方向翻转剪贴板",
+    "/flora": "//flora [密度] 将草丛与花以及仙人掌分散放置在选区内的草方块和沙子方块上",
+    "/forest": "//forest [类型] [密度] 选区内生成森林",
+    "/g": {
+      "|": "/generate"
+    },
+    "/gb": "",
+    "/gen": {
+      "|": "/generate"
+    },
+    "/genbiome": "",
+    "/generate": "//generate [-chor] <方块样式> <表达式…> 任意表达式图像生成，-c会将选区的空间作为原点，-h生成空心形状，-o使用原点设定为原始坐标，-r使用游戏的原始坐标",
+    "/generatebiome": "",
+    "/gmask": "",
+    "/green": "//green [半径] [-f] 模拟草地生长，-f同时转换其他泥土",
+    "/hcyl": "//hcyl <方块样式> <东西半径> [南北半径] [高度] 生成空心圆柱体",
+    "/help": "//help [-s] [-p <页面>] [命令] -s显示给定命令的子命令，-p显示指定的页码",
+    "/hollow": "//hollow [粗细] [样式] 清空此选区中包含的物体，厚度是以曼哈顿距离来测量的",
+    "/hpos1": "//hpos1 将准星指向位置作为选区第一点",
+    "/hpos2": "//hpos2 将准星指向位置作为选区第二点",
+    "/hpyramid": "//hpyramid <方块样式> <大小> 生成空心金字塔",
+    "/hsphere": "//hsphere [-r] <方块样式> <半径> 生成空心球体，-r将球升高到你的脚下",
+    "/inset": "//inset <数量> [-hv] 在各轴同时收缩选区，-h表示水平方向，-v表示竖直方向",
+    "/l": "",
+    "/limit": "",
+    "/line": "//line [-h] <样式> [粗细] 在选区顶点之间绘制线段，-h表示仅生成外表",
+    "/lrbuild": "",
+    "/material": "",
+    "/middle": "//middle 设置中心方块",
+    "/move": "//move [-abes] [距离] [方向] [填充方块] 移动选区内容，-a忽略空气，-b复制群系，-e复制实体，-s同时移动选区",
+    "/naturalize": "//naturalize 自然化，会使用石头、泥土与草方块“自然化”选区内容，按照MC默认生成方式",
+    "/navwand": "",
+    "/outline": "//outline <方块样式> 为选区建造墙壁、天花板和地板",
+    "/outset": "//outset <数量> [-hv] 在各轴同时扩张选区，-h表示水平方向，-v表示竖直方向",
+    "/overlay": "//overlay <方块样式> 在选区内的方块表面覆盖一层另一种方块",
+    "/paste": "//paste [-abenos] 粘贴剪贴板中的内容，-a忽略空气方块，-o粘贴在原始位置，-s选中粘贴后的位置，-n只选中粘贴后的位置，-e粘贴实体，-b粘贴生物群系",
+    "/perf": "",
+    "/pos1": "//pos1 [x,y,z] 将当前位置作为选区第一点",
+    "/pos2": "//pos2 [x,y,z] 将当前位置作为选区第二点",
+    "/pyramid": "//pyramid <方块样式> <大小> [-h] 生成一个的金字塔，-h生成空心金字塔",
+    "/re": {
+      "|": "/replace"
+    },
+    "/redo": "重做上一个操作（如果可以重做的话）",
+    "/regen": "//regen 选区内重新生成为第一次生成地图时的状态，它会使用地图的种子",
+    "/removeabove": "//removeabove [范围] [高度] 简单地移除你上方的方块",
+    "/removebelow": "//removebelow [范围] [深度] 简单地移除你下方的方块",
+    "/removenear": "//removenear <蒙版> [范围] 清除附近指定种类的方块",
+    "/reorder": "",
+    "/rep": {
+      "|": "/replace"
+    },
+    "/replace": "//replace [要替换掉的方块] <用于替换的方块> 替换选区内方块",
+    "/replacenear": "//replacenear <范围> [需要替换方块] <替换使用方块> 替换附近的方块",
+    "/restore": "",
+    "/rotate": "//rotate <y角度> [x角度] [z角度] 旋转剪贴板内容",
+    "/schem": {
+      "|": "/schematic"
+    },
+    "/schematic": {
+      "list": "//schematic (list|ls|all) [-dn] [-p <页面>] 显示可用的schematic文件列表，-d旧的在前，-n新的在前",
+      "ls": {
+        "~": "list"
+      },
+      "all": {
+        "~": "list"
+      },
+      "load": "//schematic load <文件名> [<格式>] 从剪贴板加载schematic",
+      "save": "//schematic save <文件名> [<格式>] 存储schematic到剪贴板",
+      "delete": "//schematic delete 删除一个已保存的schematic",
+      "?": "//schematic (list|ls|all|load|save) schematic文件操作"
+    },
+    "/search": "",
+    "/searchitem": "",
+    "/sel": {
+      "cuboid": "//sel cuboid 长方体选择模式",
+      "extend": "//sel extend 长方体扩大选择模式",
+      "poly": "//sel poly 多边形选择模式",
+      "ellispoid": "//sel ellispoid 椭球选择模式",
+      "sphere": "//sel sphere 球体选择模式",
+      "cyl": "//sel cyl 圆柱体选择模式",
+      "convex": "//sel convex 多面体选择模式",
+      "?": "//sel (cuboid|extend|poly|ellispoid|sphere|cyl|convex) 设置选区模式"
+    },
+    "/selwand": "",
+    "/set": "//set <方块样式> 设置选区内所有方块",
+    "/setbiome": "//setbiome [-p] <目标> 修改选区内的生物群系，默认使用选区内的所有方块，-p使用你当前所处的坐标",
+    "/shift": "//shift <数量> [方向] 移动选区位置",
+    "/size": "//size [-c] 计算选区大小，-c表示计算剪贴板中的选区大小",
+    "/smooth": "//smooth [迭代次数] [蒙版] 生成平滑表面，迭代次数越多越平滑",
+    "/snow": "//snow [半径] 模拟降雪",
+    "/solve": {
+      "|": "/calculate"
+    },
+    "/sphere": "//sphere [-hr] <方块样式> <半径> 生成球体，-r将球升高到你的脚下，-h创建空心球体",
+    "/stack": "//stack [-abes] [次数] [方向] 向你所看的方向重复放置选区内容，-a忽略空气，-b复制群系，-e复制实体，-s同时移动选区到最后一个位置",
+    "/thaw": "//thaw [半径] 解冻区域",
+    "/timeout": "",
+    "/toggleplace": "",
+    "/undo": "撤销上一个操作（如果可以撤销的话）",
+    "/walls": "//walls <方块样式> 选区内四周创建墙壁，忽略房顶与地板",
+    "/wand": "//wand 使用木斧选择",
+    "/watchdog": "",
+    "/world": "",
+    "asc": {
+      "|": "ascend"
+    },
+    "ascend": "/ascend [层数] 向上穿过指定层数的墙，默认为1层",
+    "biomeinfo": "/biomeinfo [-pt] 获取目标方块的生物群系信息，默认使用选区内的所有方块，-t使用你正在看着的方块，-p使用你当前所在的方块",
+    "biomelist": "/biomelist [-p <页面>] 列举所有的生物群系",
+    "br": {
+      "|": "/brush"
+    },
+    "brush": {
+      "|": "/brush"
+    },
+    "butcher": "/butcher [-pngabtfl] [半径] 移除生物，不会有掉落物，-p移除宠物，-n移除NPC，-g移除铁傀儡，-a移除动物，-b移除环境生物，-t移除使用自定义名称的生物，-f所有，-l被移除的怪物位置生成闪电",
+    "ceil": "/ceil [-fg] [clearance] 传送到屋顶下方，clearance定义头顶空间大小，-f强制使用飞行以保持静止，-g强制使用玻璃以保持静止",
+    "chunkinfo": "/chunkinfo 打印所在区块信息",
+    "clearclipboard": "/clearclipboard 清空剪贴板",
+    "delchunks": "/delchunks 生成一个可以删除选区覆盖的区块的脚本",
+    "desc": {
+      "|": "descend"
+    },
+    "descend": "/descend [层数] 向下穿过指定层数的墙，默认为1层",
+    "ex": {
+      "|": "/extinguish"
+    },
+    "ext": {
+      "|": "/extinguish"
+    },
+    "extinguish": {
+      "|": "/extinguish"
+    },
+    "fixlava": {
+      "|": "/fixlava"
+    },
+    "fixwater": {
+      "|": "/fixwater"
+    },
+    "forestgen": "/forestgen [范围] [种类] [密度] 在指定范围生成森林",
+    "green": {
+      "|": "/green"
+    },
+    "j": {
+      "|": "jumpto"
+    },
+    "jumpto": "/jumpto 传送至准星所指向的方块上方",
+    "listchunks": "/listchunks 列出选区覆盖的区块",
+    "pickaxe": {
+      "|": "superpickaxe"
+    },
+    "pumpkins": "/pumpkins [范围] 生成南瓜丛",
+    "redo": {
+      "|": "/redo"
+    },
+    "rem": {
+      "|": "remove"
+    },
+    "rement": {
+      "|": "remove"
+    },
+    "remove": "/remove <要移除的实体> <半径> 移除一种类型的所有实体",
+    "removeabove": {
+      "|": "/removeabove"
+    },
+    "removebelow": {
+      "|": "/removebelow"
+    },
+    "removenear": {
+      "|": "/removenear"
+    },
+    "replacenear": {
+      "|": "/replacenear"
+    },
+    "schem": {
+      "|": "/schematic"
+    },
+    "schematic": {
+      "|": "/schematic"
+    },
+    "size": "/size [尺寸] 设定刷子的尺寸，默认为6",
+    "snow": {
+      "|": "/snow"
+    },
+    "sp": {
+      "|": "superpickaxe"
+    },
+    "superpickaxe": {
+      "single": "/superpickaxe single 破坏一个方块",
+      "area": "/superpickaxe area <半径> 破坏一个以击中的方块为中心长度和宽度为(半径*2+1)的长方体区域",
+      "recursive": "/superpickaxe recursive <半径> 破坏与原始方块相接的方块",
+      "recur": {
+        "~": "recursive"
+      }
+    },
+    "thaw": {
+      "|": "/thaw"
+    },
+    "thru": "/thru 穿过你面向的墙壁",
+    "tool": {
+      "tree": "/tool tree [种类] 启动树木生成工具",
+      "deltree": "/tool deltree 启动浮空树木、蘑菇清除工具",
+      "repl": "/tool repl <方块> 使用这个工具可以用右键点击的方式将方块替换为需要的方块",
+      "lrbuild": "/tool lrbuild <左键放置方块> <右键放置方块> 使用这个工具可以在一段距离外放置和破坏方块，瞄准点击即可",
+      "farwand": "/tool farwand 和选择魔杖的工作方式相同，但是有从远处选择方块的能力",
+      "cycler": "/tool cycler 被这个工具右键点击的方块会在它们所有的附加值状态中循环(如果支持)",
+      "info": "/tool info 使用这个工具右键点击方块时，玩家会收到关于这个方块的信息",
+      "floodfill": "/tool floodfill <图案> <范围> 从右键点击的位置开始，填充工具会填充范围内所有相邻的方块并将原始的方块种类设定为给出的图案",
+      "flood": {
+        "~": "floodfill"
+      },
+      "none": {
+        "~": "unbind"
+      },
+      "unbind": "/tool (none|unbind) 解除工具绑定",
+      "?": "工具是可以“绑定”至一个物品来右键点击使用的效用性功能，手持需要绑定的物品并使用指令就可以绑定一个工具"
+    },
+    "undo": {
+      "|": "/undo"
+    },
+    "unstuck": "/unstuck 可以在你被封在方块里时将你解救出来",
+    "up": "/up [-fg] <距离> 上升任意距离，-f强制使用飞行以保持静止，-g强制使用玻璃以保持静止",
+    "!": {
+      "|": "unstuck"
+    }
+  }
+}

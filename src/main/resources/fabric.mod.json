@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "wetk",
+  "version": "1.0.0",
+  "name": "WorldEditToolKit",
+  "description": "",
+  "authors": [
+    "IAFEnvoy"
+  ],
+  "contact": {
+    "repo": "https://github.com/IAFEnvoy/WorldEditToolKit"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/wetk/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "iafenvoy.wetk.WorldEditToolKit"
+    ],
+    "modmenu": [
+      "iafenvoy.wetk.compat.ModMenu"
+    ]
+  },
+  "mixins": [
+    "wetk.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.25",
+    "fabric": "*",
+    "minecraft": "1.20.1"
+  }
+}

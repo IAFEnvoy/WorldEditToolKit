@@ -1,0 +1,17 @@
+{
+  "config.wetk.title": "WorldEdit工具箱 设置菜单",
+  "config.wetk.general": "通用",
+  "config.wetk.shortcut": "快捷键",
+
+  "config.wetk.open_menu_key": "开启菜单快捷键",
+  "config.wetk.enable_tip": "开启指令提示",
+  "config.wetf.set_hand": "//set自动使用手上方块",
+  "config.wetk.we_cut": "剪切 //cut",
+  "config.wetk.we_copy": "复制 //copy",
+  "config.wetk.we_paste": "黏贴//paste",
+  "config.wetk.we_undo": "撤回 //undo",
+  "config.wetk.we_redo": "重做 //redo",
+  "config.wetk.we_set": "填充 //set",
+
+  "chat.error.not_a_block": "[WETK] 此物品不是一个方块"
+}

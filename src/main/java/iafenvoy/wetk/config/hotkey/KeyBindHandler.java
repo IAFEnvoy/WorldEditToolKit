@@ -1,0 +1,34 @@
+package iafenvoy.wetk.config.hotkey;
+
+import fi.dy.masa.malilib.hotkeys.IHotkeyCallback;
+import fi.dy.masa.malilib.hotkeys.IKeybind;
+import fi.dy.masa.malilib.hotkeys.KeyAction;
+import iafenvoy.wetk.config.Configs;
+import iafenvoy.wetk.config.GuiConfig;
+import net.minecraft.client.MinecraftClient;
+
+public class KeyBindHandler implements IHotkeyCallback {
+    public static final KeyBindHandler INSTANCE = new KeyBindHandler();
+
+    @Override
+    public boolean onKeyAction(KeyAction action, IKeybind key) {
+        MinecraftClient client = MinecraftClient.getInstance();
+        if (client.player == null) return true;
+        if (key == Configs.General.open_menu_key.getKeybind()) {
+            if (client.currentScreen instanceof GuiConfig)
+                client.currentScreen.close(); // actually has no effect
+            else
+                client.setScreen(new GuiConfig());
+        } else if (key == Configs.ShortCut.we_cut.getKeybind())
+            client.player.networkHandler.sendChatCommand("/cut");
+        else if (key == Configs.ShortCut.we_copy.getKeybind())
+            client.player.networkHandler.sendChatCommand("/copy");
+        else if (key == Configs.ShortCut.we_paste.getKeybind())
+            client.player.networkHandler.sendChatCommand("/paste");
+        else if (key == Configs.ShortCut.we_undo.getKeybind())
+            client.player.networkHandler.sendChatCommand("/undo");
+        else if (key == Configs.ShortCut.we_redo.getKeybind())
+            client.player.networkHandler.sendChatCommand("/redo");
+        return true;
+    }
+}
