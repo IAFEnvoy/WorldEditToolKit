@@ -47,32 +47,34 @@ public class Configs implements IConfigHandler {
     }
 
     public static class General {
-        public static final ConfigHotkey open_menu_key = new NativeHotkey("open_menu_key", "Z,C");
-        public static final ConfigBoolean enable_tip = new NativeBoolean("enable_tip", true);
-        public static final ConfigBoolean set_hand = new NativeBoolean("set_hand", true);
+        public static final ConfigHotkey OPEN_MENU_KEY = new NativeHotkey("open_menu_key", "Z,C");
+        public static final ConfigBoolean ENABLE_TIP = new NativeBoolean("enable_tip", true);
+        public static final ConfigBoolean ENABLE_HOTKEY = new NativeBoolean("enable_hotkey", true);
+        public static final ConfigBoolean SET_HAND = new NativeBoolean("set_hand", true);
 
         public static void init() {
-            Category.GENERAL.add(open_menu_key);
-            Category.GENERAL.add(enable_tip);
-            Category.GENERAL.add(set_hand);
+            Category.GENERAL.add(OPEN_MENU_KEY);
+            Category.GENERAL.add(ENABLE_TIP);
+            Category.GENERAL.add(ENABLE_HOTKEY);
+            Category.GENERAL.add(SET_HAND);
         }
     }
 
     public static class ShortCut {
-        public static final ConfigHotkey we_cut = new NativeHotkey("we_cut", "LEFT_CONTROL,X");
-        public static final ConfigHotkey we_copy = new NativeHotkey("we_copy", "LEFT_CONTROL,C");
-        public static final ConfigHotkey we_paste = new NativeHotkey("we_paste", "LEFT_CONTROL,V");
-        public static final ConfigHotkey we_undo = new NativeHotkey("we_undo", "LEFT_CONTROL,Z");
-        public static final ConfigHotkey we_redo = new NativeHotkey("we_redo", "LEFT_CONTROL,Y");
-        public static final ConfigHotkey we_set = new NativeHotkey("we_set", "LEFT_CONTROL,H");
+        public static final ConfigHotkey WE_CUT = new NativeHotkey("we_cut", "LEFT_CONTROL,X");
+        public static final ConfigHotkey WE_COPY = new NativeHotkey("we_copy", "LEFT_CONTROL,C");
+        public static final ConfigHotkey WE_PASTE = new NativeHotkey("we_paste", "LEFT_CONTROL,V");
+        public static final ConfigHotkey WE_UNDO = new NativeHotkey("we_undo", "LEFT_CONTROL,Z");
+        public static final ConfigHotkey WE_REDO = new NativeHotkey("we_redo", "LEFT_CONTROL,Y");
+        public static final ConfigHotkey WE_SET = new NativeHotkey("we_set", "LEFT_CONTROL,H");
 
         public static void init() {
-            Category.SHORTCUT.add(we_cut);
-            Category.SHORTCUT.add(we_copy);
-            Category.SHORTCUT.add(we_paste);
-            Category.SHORTCUT.add(we_undo);
-            Category.SHORTCUT.add(we_redo);
-            Category.SHORTCUT.add(we_set);
+            Category.SHORTCUT.add(WE_CUT);
+            Category.SHORTCUT.add(WE_COPY);
+            Category.SHORTCUT.add(WE_PASTE);
+            Category.SHORTCUT.add(WE_UNDO);
+            Category.SHORTCUT.add(WE_REDO);
+            Category.SHORTCUT.add(WE_SET);
         }
     }
 }

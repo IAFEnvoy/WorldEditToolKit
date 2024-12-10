@@ -7,12 +7,12 @@ import iafenvoy.wetk.config.Configs;
 public class KeybindProvider implements IKeybindProvider {
     @Override
     public void addKeysToMap(IKeybindManager manager) {
-        manager.addKeybindToMap(Configs.General.open_menu_key.getKeybind());
-        manager.addKeybindToMap(Configs.ShortCut.we_cut.getKeybind());
-        manager.addKeybindToMap(Configs.ShortCut.we_copy.getKeybind());
-        manager.addKeybindToMap(Configs.ShortCut.we_paste.getKeybind());
-        manager.addKeybindToMap(Configs.ShortCut.we_undo.getKeybind());
-        manager.addKeybindToMap(Configs.ShortCut.we_redo.getKeybind());
+        manager.addKeybindToMap(Configs.General.OPEN_MENU_KEY.getKeybind());
+        manager.addKeybindToMap(Configs.ShortCut.WE_CUT.getKeybind());
+        manager.addKeybindToMap(Configs.ShortCut.WE_COPY.getKeybind());
+        manager.addKeybindToMap(Configs.ShortCut.WE_PASTE.getKeybind());
+        manager.addKeybindToMap(Configs.ShortCut.WE_UNDO.getKeybind());
+        manager.addKeybindToMap(Configs.ShortCut.WE_REDO.getKeybind());
     }
 
     @Override

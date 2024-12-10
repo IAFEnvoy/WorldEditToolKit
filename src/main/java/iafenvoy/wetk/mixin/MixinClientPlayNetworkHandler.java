@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 public class MixinClientPlayNetworkHandler {
     @ModifyVariable(method = "sendChatCommand", at = @At("HEAD"), ordinal = 0, argsOnly = true)
     private String modifyCommand(String original) {
-        if (original.equals("/set")&& Configs.General.set_hand.getBooleanValue()&&MinecraftClient.getInstance().player != null) {
+        if (original.equals("/set")&& Configs.General.SET_HAND.getBooleanValue()&&MinecraftClient.getInstance().player != null) {
             if (MinecraftClient.getInstance().player.getInventory().getMainHandStack().getItem() instanceof BlockItem)
                 original += " " + MinecraftClient.getInstance().player.getInventory().getMainHandStack().getItem().toString();
             else

@@ -5,6 +5,7 @@
 
   "config.wetk.open_menu_key": "开启菜单快捷键",
   "config.wetk.enable_tip": "开启指令提示",
+  "config.wetk.enable_hotkey": "开启快捷键",
   "config.wetf.set_hand": "//set自动使用手上方块",
   "config.wetk.we_cut": "剪切 //cut",
   "config.wetk.we_copy": "复制 //copy",

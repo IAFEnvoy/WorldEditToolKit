@@ -32,7 +32,7 @@ public class MixinChatScreen extends Screen {
 
     @Inject(method = "render", at = @At("HEAD"))
     private void renderTips(DrawContext context, int mouseX, int mouseY, float delta, CallbackInfo ci) {
-        if (Configs.General.enable_tip.getBooleanValue() && this.chatField.getText().startsWith("/"))
+        if (Configs.General.ENABLE_TIP.getBooleanValue() && this.chatField.getText().startsWith("/"))
             this.commandTipLabel.render(context, this.chatField.getText().substring(1));
     }
 }

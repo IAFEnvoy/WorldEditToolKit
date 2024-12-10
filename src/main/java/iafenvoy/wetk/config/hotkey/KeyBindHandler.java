@@ -13,21 +13,21 @@ public class KeyBindHandler implements IHotkeyCallback {
     @Override
     public boolean onKeyAction(KeyAction action, IKeybind key) {
         MinecraftClient client = MinecraftClient.getInstance();
-        if (client.player == null) return true;
-        if (key == Configs.General.open_menu_key.getKeybind()) {
+        if (client.player == null || !Configs.General.ENABLE_HOTKEY.getBooleanValue()) return true;
+        if (key == Configs.General.OPEN_MENU_KEY.getKeybind()) {
             if (client.currentScreen instanceof GuiConfig)
                 client.currentScreen.close(); // actually has no effect
             else
                 client.setScreen(new GuiConfig());
-        } else if (key == Configs.ShortCut.we_cut.getKeybind())
+        } else if (key == Configs.ShortCut.WE_CUT.getKeybind())
             client.player.networkHandler.sendChatCommand("/cut");
-        else if (key == Configs.ShortCut.we_copy.getKeybind())
+        else if (key == Configs.ShortCut.WE_COPY.getKeybind())
             client.player.networkHandler.sendChatCommand("/copy");
-        else if (key == Configs.ShortCut.we_paste.getKeybind())
+        else if (key == Configs.ShortCut.WE_PASTE.getKeybind())
             client.player.networkHandler.sendChatCommand("/paste");
-        else if (key == Configs.ShortCut.we_undo.getKeybind())
+        else if (key == Configs.ShortCut.WE_UNDO.getKeybind())
             client.player.networkHandler.sendChatCommand("/undo");
-        else if (key == Configs.ShortCut.we_redo.getKeybind())
+        else if (key == Configs.ShortCut.WE_REDO.getKeybind())
             client.player.networkHandler.sendChatCommand("/redo");
         return true;
     }
