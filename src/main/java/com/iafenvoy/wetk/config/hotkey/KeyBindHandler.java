@@ -1,10 +1,10 @@
 package com.iafenvoy.wetk.config.hotkey;
 
+import com.iafenvoy.wetk.config.Configs;
+import com.iafenvoy.wetk.config.GuiConfig;
 import fi.dy.masa.malilib.hotkeys.IHotkeyCallback;
 import fi.dy.masa.malilib.hotkeys.IKeybind;
 import fi.dy.masa.malilib.hotkeys.KeyAction;
-import com.iafenvoy.wetk.config.Configs;
-import com.iafenvoy.wetk.config.GuiConfig;
 import net.minecraft.client.MinecraftClient;
 
 public class KeyBindHandler implements IHotkeyCallback {

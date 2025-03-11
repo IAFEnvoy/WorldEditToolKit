@@ -2,6 +2,7 @@ package com.iafenvoy.wetk.util;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.iafenvoy.wetk.WorldEditToolKit;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -25,7 +26,7 @@ public class FileUtil {
             String data = FileUtil.readByLines(new InputStreamReader(listFile));
             return JsonParser.parseString(data).getAsJsonObject();
         } catch (Exception e) {
-            e.printStackTrace();
+            WorldEditToolKit.LOGGER.error("Failed to read json.", e);
             return null;
         }
     }

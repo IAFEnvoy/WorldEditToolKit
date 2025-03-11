@@ -1,17 +1,17 @@
 package com.iafenvoy.wetk.config;
 
+import com.iafenvoy.wetk.WorldEditToolKit;
 import fi.dy.masa.malilib.gui.GuiConfigsBase;
 import fi.dy.masa.malilib.gui.button.ButtonGeneric;
 import fi.dy.masa.malilib.util.StringUtils;
-import com.iafenvoy.wetk.ModIdProvider;
 
 import java.util.List;
 
-public class GuiConfig extends GuiConfigsBase implements ModIdProvider {
+public class GuiConfig extends GuiConfigsBase {
     private static Category currentTab = Category.GENERAL;
 
     public GuiConfig() {
-        super(10, 50, MOD_ID, null, "config.wetk.title");
+        super(10, 50, WorldEditToolKit.MOD_ID, null, "config.wetk.title");
     }
 
     @Override

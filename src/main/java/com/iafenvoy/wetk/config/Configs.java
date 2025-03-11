@@ -1,14 +1,13 @@
 package com.iafenvoy.wetk.config;
 
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.iafenvoy.wetk.config.type.NativeBoolean;
 import com.iafenvoy.wetk.config.type.NativeHotkey;
 import fi.dy.masa.malilib.config.ConfigUtils;
 import fi.dy.masa.malilib.config.IConfigHandler;
-import fi.dy.masa.malilib.config.options.*;
+import fi.dy.masa.malilib.config.options.ConfigBoolean;
+import fi.dy.masa.malilib.config.options.ConfigHotkey;
 import fi.dy.masa.malilib.util.JsonUtils;
-import iafenvoy.wetk.config.type.*;
 
 import java.io.File;
 
@@ -23,14 +22,10 @@ public class Configs implements IConfigHandler {
 
     public static void loadFile() {
         File settingFile = new File(FILE_PATH);
-        if (settingFile.isFile() && settingFile.exists()) {
-            JsonElement jsonElement = JsonUtils.parseJsonFile(settingFile);
-            if (jsonElement instanceof JsonObject) {
-
+        if (settingFile.isFile() && settingFile.exists())
+            if (JsonUtils.parseJsonFile(settingFile) instanceof JsonObject object)
                 for (Category category : Category.values())
-                    ConfigUtils.readConfigBase((JsonObject) jsonElement, category.name(), category.getConfigs());
-            }
-        }
+                    ConfigUtils.readConfigBase(object, category.name(), category.getConfigs());
     }
 
     @Override
