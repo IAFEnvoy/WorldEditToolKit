@@ -1,4 +1,4 @@
-package iafenvoy.wetk.util;
+package com.iafenvoy.wetk.util;
 
 public enum Language {
     Chinese("zh_cn"),

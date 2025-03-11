@@ -1,4 +1,4 @@
-package iafenvoy.wetk.util;
+package com.iafenvoy.wetk.util;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;

@@ -1,7 +1,7 @@
-package iafenvoy.wetk.config.type;
+package com.iafenvoy.wetk.config.type;
 
 import fi.dy.masa.malilib.config.options.ConfigBoolean;
-import iafenvoy.wetk.ModIdProvider;
+import com.iafenvoy.wetk.ModIdProvider;
 import net.minecraft.client.resource.language.I18n;
 
 public class NativeBoolean extends ConfigBoolean implements ModIdProvider {

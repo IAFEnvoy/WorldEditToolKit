@@ -1,9 +1,9 @@
-package iafenvoy.wetk.config.type;
+package com.iafenvoy.wetk.config.type;
 
 import fi.dy.masa.malilib.config.options.ConfigHotkey;
 import fi.dy.masa.malilib.hotkeys.KeybindSettings;
-import iafenvoy.wetk.ModIdProvider;
-import iafenvoy.wetk.config.hotkey.KeyBindHandler;
+import com.iafenvoy.wetk.ModIdProvider;
+import com.iafenvoy.wetk.config.hotkey.KeyBindHandler;
 import net.minecraft.client.resource.language.I18n;
 
 public class NativeHotkey extends ConfigHotkey implements ModIdProvider {

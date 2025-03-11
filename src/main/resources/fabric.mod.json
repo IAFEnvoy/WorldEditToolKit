@@ -15,10 +15,10 @@
   "environment": "client",
   "entrypoints": {
     "client": [
-      "iafenvoy.wetk.WorldEditToolKit"
+      "com.iafenvoy.wetk.WorldEditToolKit"
     ],
     "modmenu": [
-      "iafenvoy.wetk.compat.ModMenu"
+      "com.iafenvoy.wetk.compat.ModMenu"
     ]
   },
   "mixins": [

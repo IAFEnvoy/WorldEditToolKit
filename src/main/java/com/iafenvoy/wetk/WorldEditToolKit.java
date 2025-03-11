@@ -1,11 +1,11 @@
-package iafenvoy.wetk;
+package com.iafenvoy.wetk;
 
 import fi.dy.masa.malilib.config.ConfigManager;
 import fi.dy.masa.malilib.event.InputEventHandler;
-import iafenvoy.wetk.config.Configs;
-import iafenvoy.wetk.config.hotkey.KeybindProvider;
-import iafenvoy.wetk.tip.TipManager;
-import iafenvoy.wetk.util.FileUtil;
+import com.iafenvoy.wetk.config.Configs;
+import com.iafenvoy.wetk.config.hotkey.KeybindProvider;
+import com.iafenvoy.wetk.tip.TipManager;
+import com.iafenvoy.wetk.util.FileUtil;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 

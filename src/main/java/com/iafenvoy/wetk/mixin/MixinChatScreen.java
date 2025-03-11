@@ -1,7 +1,7 @@
-package iafenvoy.wetk.mixin;
+package com.iafenvoy.wetk.mixin;
 
-import iafenvoy.wetk.config.Configs;
-import iafenvoy.wetk.tip.CommandTipLabel;
+import com.iafenvoy.wetk.config.Configs;
+import com.iafenvoy.wetk.tip.CommandTipLabel;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ChatScreen;
 import net.minecraft.client.gui.screen.Screen;

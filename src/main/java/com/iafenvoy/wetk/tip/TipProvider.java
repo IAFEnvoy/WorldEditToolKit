@@ -1,4 +1,4 @@
-package iafenvoy.wetk.tip;
+package com.iafenvoy.wetk.tip;
 
 public interface TipProvider {
     String parse(String[] command);

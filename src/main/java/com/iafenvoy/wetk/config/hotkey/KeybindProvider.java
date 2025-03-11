@@ -1,8 +1,8 @@
-package iafenvoy.wetk.config.hotkey;
+package com.iafenvoy.wetk.config.hotkey;
 
 import fi.dy.masa.malilib.hotkeys.IKeybindManager;
 import fi.dy.masa.malilib.hotkeys.IKeybindProvider;
-import iafenvoy.wetk.config.Configs;
+import com.iafenvoy.wetk.config.Configs;
 
 public class KeybindProvider implements IKeybindProvider {
     @Override

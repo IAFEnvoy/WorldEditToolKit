@@ -1,8 +1,8 @@
-package iafenvoy.wetk.tip;
+package com.iafenvoy.wetk.tip;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import iafenvoy.wetk.util.Language;
+import com.iafenvoy.wetk.util.Language;
 
 import java.util.ArrayList;
 import java.util.HashMap;

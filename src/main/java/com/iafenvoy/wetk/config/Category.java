@@ -1,4 +1,4 @@
-package iafenvoy.wetk.config;
+package com.iafenvoy.wetk.config;
 
 import com.google.common.collect.ImmutableList;
 import fi.dy.masa.malilib.config.IConfigBase;

@@ -1,4 +1,4 @@
-package iafenvoy.wetk.tip;
+package com.iafenvoy.wetk.tip;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;

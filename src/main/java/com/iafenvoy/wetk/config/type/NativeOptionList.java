@@ -1,8 +1,8 @@
-package iafenvoy.wetk.config.type;
+package com.iafenvoy.wetk.config.type;
 
 import fi.dy.masa.malilib.config.IConfigOptionListEntry;
 import fi.dy.masa.malilib.config.options.ConfigOptionList;
-import iafenvoy.wetk.ModIdProvider;
+import com.iafenvoy.wetk.ModIdProvider;
 import net.minecraft.client.resource.language.I18n;
 
 public class NativeOptionList extends ConfigOptionList implements ModIdProvider {

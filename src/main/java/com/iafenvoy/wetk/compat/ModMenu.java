@@ -1,8 +1,8 @@
-package iafenvoy.wetk.compat;
+package com.iafenvoy.wetk.compat;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
-import iafenvoy.wetk.config.GuiConfig;
+import com.iafenvoy.wetk.config.GuiConfig;
 
 public class ModMenu implements ModMenuApi {
 

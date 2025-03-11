@@ -1,6 +1,6 @@
-package iafenvoy.wetk.mixin;
+package com.iafenvoy.wetk.mixin;
 
-import iafenvoy.wetk.config.Configs;
+import com.iafenvoy.wetk.config.Configs;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayNetworkHandler;
 import net.minecraft.item.BlockItem;

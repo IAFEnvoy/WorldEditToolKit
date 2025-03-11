@@ -1,9 +1,9 @@
-package iafenvoy.wetk.config;
+package com.iafenvoy.wetk.config;
 
 import fi.dy.masa.malilib.gui.GuiConfigsBase;
 import fi.dy.masa.malilib.gui.button.ButtonGeneric;
 import fi.dy.masa.malilib.util.StringUtils;
-import iafenvoy.wetk.ModIdProvider;
+import com.iafenvoy.wetk.ModIdProvider;
 
 import java.util.List;
 
